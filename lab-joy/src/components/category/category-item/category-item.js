@@ -27,6 +27,12 @@ class CategoryItem extends React.Component {
     }
   }
 
+  handleEditing(cat) {
+    this.setState({
+      editing: !this.state.editing,
+    });
+  }
+
   handleUpdate(cat) {
     this.setState({
       editing: !this.state.editing,
@@ -42,7 +48,7 @@ class CategoryItem extends React.Component {
 
   render() {
     return (
-      <div className="category-item" key={this.props.category._id} onDoubleClick={this.handleUpdate}>
+      <div className="category-item" key={this.props.category._id} onDoubleClick={this.handleEditing}>
         <h2>{this.props.category.name}</h2>
         <p>Budget: ${this.props.category.budget - this.props.expenses[this.props.category._id].reduce((a, b) => a + Number(b.expense), 0)}</p>
         <button onClick={this.handleDelete}>{this.props.buttonText}</button>

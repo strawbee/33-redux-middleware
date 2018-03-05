@@ -2,7 +2,7 @@
 Joy Hou, Feb 26, 2018
 
 ## Problem Domain
-We are using React and Redux to create a budget tracker application where we can create, update, and delete budget items. Within each budget item, we can also create, update, and delete expenses related to the item category. We are using Redux's combineReducers method to combine reducers for our categories and our expenses.
+We are using React and Redux to create a budget tracker application where we can create, update, and delete budget items. Within each budget item, we can also create, update, and delete expenses related to the item category. We are using Redux's combineReducers method to combine reducers for our categories and our expenses. We are using crash reporter, redux reporter, and redux session middleware for logging.
 
 ## Components
 ### src/components/app/index.js
