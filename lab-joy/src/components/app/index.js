@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <main className="main-content">
+      <main className="main-content" id="wrapper">
         <Provider store={store}>
           <BrowserRouter>
             <Route exact path="/" component={Dashboard} />
