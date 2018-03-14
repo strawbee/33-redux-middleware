@@ -1,4 +1,4 @@
-# Lab 31 - Budget Tracker
+# Lab 31-34 - Budget Tracker
 Joy Hou, Feb 26, 2018
 
 ## Problem Domain

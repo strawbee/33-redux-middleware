@@ -5,4 +5,6 @@ export default store => next => action => {
   for (let key in state) {
     localStorage[key] = JSON.stringify(state[key]);
   }
+
+  return result;
 };
